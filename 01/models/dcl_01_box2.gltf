@@ -17,7 +17,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "dec_test",
+            "name" : "dec_entrance",
             "rotation" : [
                 0.7071068286895752,
                 0,
@@ -27,7 +27,7 @@
         },
         {
             "mesh" : 1,
-            "name" : "dec_blackbox_02",
+            "name" : "dcl_02_box",
             "rotation" : [
                 0.7071068286895752,
                 0,
@@ -37,7 +37,7 @@
         },
         {
             "mesh" : 2,
-            "name" : "dec_blackbox_02_collider",
+            "name" : "dcl_02_box_collider",
             "rotation" : [
                 0.7071068286895752,
                 0,
@@ -81,7 +81,7 @@
         },
         {
             "doubleSided" : true,
-            "name" : "black.004",
+            "name" : "black.001",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0,
@@ -110,7 +110,7 @@
             ]
         },
         {
-            "name" : "dec_blackbox_01",
+            "name" : "dcl_02_box",
             "primitives" : [
                 {
                     "attributes" : {
@@ -123,7 +123,7 @@
             ]
         },
         {
-            "name" : "dec_blackbox_01.001",
+            "name" : "dcl_02_box.001",
             "primitives" : [
                 {
                     "attributes" : {

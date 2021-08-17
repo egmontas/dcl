@@ -1,4 +1,4 @@
-///import * as utils from '@dcl/ecs-scene-utils'
+import * as utils from '@dcl/ecs-scene-utils'
 import * as ui from '@dcl/ui-scene-utils'
 
 ///ui.displayAnnouncement('hello world')
@@ -67,7 +67,7 @@ engine.addSystem(new GraphicsRotate())
 /// Blackbox
 
 let objOne = new Entity()
-objOne.addComponent(new GLTFShape("models/dcl_01_box2.gltf"))
+objOne.addComponent(new GLTFShape("models/dcl_01_box1.gltf"))
 objOne.addComponent(
   new Transform({
     position: new Vector3(8, 0, 8),
@@ -76,6 +76,7 @@ objOne.addComponent(
 )
 objOne.setParent(parentUD)
 
+///objOne.addComponent(new PathData())
 
 /// Logo
 
@@ -131,8 +132,8 @@ const scrOne = new Entity()
 scrOne.addComponent(new PlaneShape())
 scrOne.addComponent(
 	new Transform({
-		position: new Vector3(8,9,15.825),
-		scale: new Vector3(15.65, 15.65, 15.65),
+		position: new Vector3(8,9,15.225),
+		scale: new Vector3(14.45, 14.45, 14.45),
 	})
 	)
 
@@ -161,9 +162,9 @@ const scrTwo = new Entity()
 scrTwo.addComponent(new PlaneShape())
 scrTwo.addComponent(
 	new Transform({
-		position: new Vector3(15.825, 9, 8),
+		position: new Vector3(15.225, 9, 8),
 		rotation: new Quaternion(0,1,0,1), 
-		scale: new Vector3(15.65, 15.65, 15.65),
+		scale: new Vector3(14.45, 14.45, 14.45),
 	})
 )
 
@@ -192,9 +193,9 @@ const scrThree = new Entity()
 scrThree.addComponent(new PlaneShape())
 scrThree.addComponent(
 	new Transform({
-		position: new Vector3(8, 9, 0.175),
+		position: new Vector3(8, 9, 0.775),
 		rotation: new Quaternion(0,1,0,0), 
-		scale: new Vector3(15.65, 15.65, 15.65),
+		scale: new Vector3(14.45, 14.45, 14.45),
 	})
 )
 
@@ -223,9 +224,9 @@ const scrFour = new Entity()
 scrFour.addComponent(new PlaneShape())
 scrFour.addComponent(
 	new Transform({
-		position: new Vector3(0.175, 9, 8),
+		position: new Vector3(0.775, 9, 8),
 		rotation: new Quaternion(0,1,0,-1),
-		scale: new Vector3(15.65, 15.65, 15.65),
+		scale: new Vector3(14.45, 14.45, 14.45),
 	})
 )
 
@@ -249,9 +250,9 @@ let infoPanel = new Entity()
 infoPanel.addComponent(new PlaneShape)
 infoPanel.addComponent(
   new Transform({
-    position: new Vector3(8, 16.825, 8),
+    position: new Vector3(8, 16.225, 8),
 		rotation: new Quaternion(1,0,0,1), 
-		scale: new Vector3(15.65, 15.65, 15.65),
+		scale: new Vector3(14.45, 14.45, 14.45),
   })
 )
 
