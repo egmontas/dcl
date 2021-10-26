@@ -1,0 +1,39 @@
+{
+  "display": {
+    "title": "IRL",
+    "description": "An Exhibition for Goethe Institut by Fotoklasse Broomberg & Chanarin",
+    "navmapThumbnail": "images/dcl_thumbnail.jpg",
+    "favicon": "favicon_asset"
+  },
+  "contact": {
+    "name": "egmontas",
+    "email": "info@egmontas.xyz"
+  },
+  "owner": "",
+  "scene": {
+    "parcels": [
+      "46,-11"
+    ],
+    "base": "46,-11"
+  },
+  "requiredPermissions": [],
+  "main": "bin/game.js",
+  "tags": [],
+  "spawnPoints": [
+    {
+      "name": "spawn1",
+      "default": true,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "cameraTarget": {
+        "x": 8,
+        "y": 1,
+        "z": 8
+      }
+    }
+  ],
+  "featureToggles": {}
+}
