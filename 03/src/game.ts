@@ -264,7 +264,7 @@ infoPanel.setParent(parentUD)
 engine.addEntity(infoPanel)
 
 ///
-
+/**
 let groundPanel = new Entity()
 groundPanel.addComponent(new PlaneShape)
 groundPanel.addComponent(
@@ -284,3 +284,4 @@ groundMat.emissiveIntensity = 1
 
 groundPanel.addComponent(groundMat)
 engine.addEntity(groundPanel)
+**/
