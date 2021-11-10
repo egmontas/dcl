@@ -40,7 +40,6 @@ Install Node-Media-Server:
 mkdir nms
 cd nms
 npm install node-media-server
-vi app.js
 
 //The most tricky part but at the moment the app.js file is already setup so no need to troubleshoot anymore. Otherwise, illuspas' github page contains most of the info. 
 Change directory to newly installed Node-Media_Server directory: cd nms/
@@ -68,13 +67,15 @@ Commands: pm2 stop 0; pm2 start 0; pm2 restart 0.
 
 Install nginx & certbot: apt install nginx certbot
 //nginx is used to handle the http video call request from the user. 
-certbot is used to create an SSL certificate for the nginx server (padlock icon on the address bar in your browser).
+//certbot is used to create an SSL certificate for the nginx server (padlock icon on the address bar in your browser).
 Check if running: systemctl status nginx
 Open: <ip-address>.nip.io
-Install nginx plugin for certbot: apt install nginx certbot python-certbox-nginx
+Install nginx plugin for certbot: apt install nginx certbot python3-certbot-nginx
 //You can search for packages by name if you run: apt search nginx certbot
 
 07: certbot
+
+//this part may be outdated now, problematic...
 
 Run: certbot run --nginx -d <ip-address>.nip.io
 Enter your email address to receive an email for certification expiry. These certificates renew automatically.
@@ -108,3 +109,14 @@ Verify1: OBS should say live.
 Verify2: run: pm2 log 0 -f (it should read rtmp connect, rtmp play, rtmp publish).
 Run: mpv https://<ip-address>.nip.io/live/<nameofstream>/index.m3u8 (you should see the stream, but didn't work for me).
 This is the link to paste within your dcl scene: https://<ip-address>.nip.io/live/<nameofstream>/index.m3u8
+
+10: Troubleshooting
+
+I had a problem with the droplet running out of disk space.
+To see storage breakdown,
+Run: df -h
+To see in more detail, install ncdu.
+Run: apt-get install ncdu
+Run: ncdu /
+Navigating is self-explanatory, delete files with 'd'
+'/root/nms/srv/media/live/<name>' - was saving stream media files from each load presumably, proceeded to delete large media.
