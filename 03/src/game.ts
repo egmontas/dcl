@@ -140,12 +140,14 @@ scrOne.addComponent(matOne)
 scrOne.setParent(parentUD)	
 engine.addEntity(scrOne)
 
+/**
 scrOne.addComponent(
 	new OnPointerDown(() => {
 		vtexOne.playing = !vtexOne.playing
 	})
 )
-//vtexOne.playing = true
+**/
+vtexOne.playing = true
 vtexOne.play()
 
 /// --- Video ---
